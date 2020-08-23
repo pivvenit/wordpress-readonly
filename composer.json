@@ -1,0 +1,16 @@
+{
+  "name": "pivvenit/wordpress-readonly",
+  "description": "Wordpress plugin that activates readonly mode",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "PivvenIT",
+      "homepage": "https://pivvenit.nl"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  }
+}
