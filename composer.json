@@ -12,6 +12,17 @@
   ],
   "require": {
     "php": ">=7.2",
-    "wp-cli/wp-cli-bundle": "*"
+    "wp-cli/wp-cli-bundle": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.4",
+    "php-parallel-lint/php-parallel-lint": "^1.2.0",
+    "phpstan/phpstan": "^0.12.14"
+  },
+  "scripts": {
+    "syntax-check": "parallel-lint --no-progress --exclude app --exclude vendor .",
+    "lint": "phpcs --standard=PSR12 ./wordpress-readonly.php ",
+    "analyse": "phpstan analyse"
   }
 }

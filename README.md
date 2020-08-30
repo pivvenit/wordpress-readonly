@@ -1,6 +1,6 @@
 # Wordpress Readonly
 
-[![Packagist](https://img.shields.io/packagist/v/pivvenit/wordpress-readonly.svg?maxAge=3600)](https://packagist.org/packages/pivvenit/wordpress-readonly)[![Packagist](https://img.shields.io/packagist/l/pivvenit/wordpress-readonly.svg?maxAge=2592000)](https://github.com/pivvenit/wordpress-readonly/blob/master/LICENSE)![](https://github.com/pivvenit/wordpress-readonly/workflows/Master%20Build/badge.svg)
+[![Packagist](https://img.shields.io/packagist/v/pivvenit/wordpress-readonly.svg?maxAge=3600)](https://packagist.org/packages/pivvenit/wordpress-readonly)[![Packagist](https://img.shields.io/packagist/l/pivvenit/wordpress-readonly.svg?maxAge=2592000)](https://github.com/pivvenit/wordpress-readonly/blob/master/LICENSE)![](https://github.com/pivvenit/wordpress-readonly/workflows/Build/badge.svg)
 [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
 
 A Wordpress plugin that makes Wordpress readonly. 

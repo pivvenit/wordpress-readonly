@@ -1,0 +1,27 @@
+on:
+  push:
+
+name: Build
+
+jobs:
+  master-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Fetch the entire git repository
+        run: |
+          git fetch --unshallow
+      - name: Validate composer.json and composer.lock
+        run: composer validate --no-check-all --strict
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Check for syntax-errors
+        run: composer run syntax-check
+
+      - name: Run lint
+        run: composer run lint
+
+      - name: Run static analysis
+        run: composer run analyse
