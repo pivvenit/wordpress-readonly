@@ -22,6 +22,3 @@ jobs:
 
       - name: Run lint
         run: composer run lint
-
-      - name: Run static analysis
-        run: composer run analyse
