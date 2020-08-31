@@ -15,7 +15,7 @@
  * Description:  WordPress plugin that makes the admin readonly during activation
  * Version:      1.0.0
  * Author:       PivvenIT
- * Author URI:   https://github.com/pivvenit/wordpress-readonly
+ * Author URI:   https://github.com/pivvenit
  * License:      MIT
  * Text Domain:  pivvenit-wordpress-readonly
  */
