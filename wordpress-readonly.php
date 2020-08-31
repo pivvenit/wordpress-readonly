@@ -10,12 +10,12 @@
  *
  * @wordpress-plugin
  *
- * Plugin Name:  Readonly for Wordpress
+ * Plugin Name:  Readonly for WordPress
  * Plugin URI:   https://github.com/pivvenit/wordpress-readonly
- * Description:  Wordpress plugin that makes the admin readonly during activation
+ * Description:  WordPress plugin that makes the admin readonly during activation
  * Version:      1.0.0
  * Author:       PivvenIT
- * Author URI:   https://pivvenit.nl
+ * Author URI:   https://github.com/pivvenit/wordpress-readonly
  * License:      MIT
  * Text Domain:  pivvenit-wordpress-readonly
  */
@@ -81,7 +81,7 @@ add_filter(
         }
         $readonlyInfo = json_decode($readonlyInfo);
         if ($readonlyInfo->status == 'disabled') {
-            return;
+            return $user;
         }
         return new WP_Error(
             'readonly_disabled_auth',
@@ -128,8 +128,8 @@ if (defined('WP_CLI') && WP_CLI) {
         'readonly enable',
         function () {
             $readonlyInfo = new stdClass();
-            /* The readonly process consists of two phases, at first a grace period.
-            * During the grace period we display an alert to admin users currently logged in
+            /* The readonly process consists of two phases, at first a prepare period.
+            * During the prepare period we display an alert to admin users currently logged in
             * and we disable the login.
             * At the start of the actual readonly phase we logout all users block all incoming HTTP POST requests.
             */

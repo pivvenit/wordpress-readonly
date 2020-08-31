@@ -7,8 +7,8 @@ jQuery(document).on('heartbeat-tick', function (event, data) {
         const {__} = wp.i18n;
 
         /* Determine in which phase we are.
-         * There are two phases: the grace period, and the actual readonly
-         * During the grace period, we only notify the user that they should stop editing (and new logins are disabled).
+         * There are two phases: the prepare period, and the actual readonly
+         * During the prepare period, we only notify the user that they should stop editing (and new logins are disabled).
          * During the readonly period, changes are actually blocked server side.
          */
 

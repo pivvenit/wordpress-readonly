@@ -1,6 +1,6 @@
 {
   "name": "pivvenit/wordpress-readonly",
-  "description": "Wordpress plugin that activates readonly mode",
+  "description": "WordPress plugin that activates readonly mode",
   "minimum-stability": "stable",
   "license": "MIT",
   "type": "wordpress-plugin",
@@ -24,6 +24,6 @@
   "scripts": {
     "syntax-check": "parallel-lint --no-progress --exclude app --exclude vendor .",
     "lint": "phpcs --standard=PSR12 ./wordpress-readonly.php",
-    "analyse": "phpstan analyse"
+    "analyse": "phpstan analyse --memory-limit=256M"
   }
 }
