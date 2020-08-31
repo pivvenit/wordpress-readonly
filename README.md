@@ -1,9 +1,11 @@
-# Wordpress Readonly
+# WordPress Readonly
 
-[![Packagist](https://img.shields.io/packagist/v/pivvenit/wordpress-readonly.svg?maxAge=3600)](https://packagist.org/packages/pivvenit/wordpress-readonly)[![Packagist](https://img.shields.io/packagist/l/pivvenit/wordpress-readonly.svg?maxAge=2592000)](https://github.com/pivvenit/wordpress-readonly/blob/master/LICENSE)![](https://github.com/pivvenit/wordpress-readonly/workflows/Build/badge.svg)
+[![Packagist](https://img.shields.io/packagist/v/pivvenit/wordpress-readonly.svg?maxAge=3600)](https://packagist.org/packages/pivvenit/wordpress-readonly)
+[![Packagist](https://img.shields.io/packagist/l/pivvenit/wordpress-readonly.svg?maxAge=2592000)](https://github.com/pivvenit/wordpress-readonly/blob/master/LICENSE)
+![](https://github.com/pivvenit/wordpress-readonly/workflows/Build/badge.svg)
 [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
 
-A Wordpress plugin that makes Wordpress readonly. 
+A WordPress plugin that makes WordPress readonly. 
 It's main use case is blue/green deployments, in which the active application slot requires a (short) readonly window to sync the database to the other slot.
 
 Features:
@@ -15,7 +17,7 @@ Features:
 
 ## Installation
 
-This plugin is designed for Wordpress websites that use `Composer`, such as [Bedrock](https://packagist.org/packages/roots/bedrock).
+This plugin is designed for WordPress websites that use `Composer`, such as [Bedrock](https://packagist.org/packages/roots/bedrock).
 ```shell script
 composer require pivvenit/wordpress-readonly
 ```
