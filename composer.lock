@@ -1510,25 +1510,25 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.18.1",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca"
+                "reference": "8ff431c517be11c78c48a39a66d37431e26a6bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
-                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/8ff431c517be11c78c48a39a66d37431e26a6bed",
+                "reference": "8ff431c517be11c78c48a39a66d37431e26a6bed",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1582,7 +1582,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -3912,16 +3912,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v5.5.0",
+            "version": "v5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "7ea14fc5e4242255f6b48295fdda0512053f0dc1"
+                "reference": "5b62027b3f3b9de4994da627898599460f054584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/7ea14fc5e4242255f6b48295fdda0512053f0dc1",
-                "reference": "7ea14fc5e4242255f6b48295fdda0512053f0dc1",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/5b62027b3f3b9de4994da627898599460f054584",
+                "reference": "5b62027b3f3b9de4994da627898599460f054584",
                 "shasum": ""
             },
             "replace": {
@@ -3948,7 +3948,7 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2020-08-18T04:31:49+00:00"
+            "time": "2020-09-02T05:31:36+00:00"
         },
         {
             "name": "php-stubs/wp-cli-stubs",
@@ -3992,16 +3992,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.40",
+            "version": "0.12.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "dce7293ad7b59fc09a9ab9b0b5b44902c092ca17"
+                "reference": "e96dd5e7ae9aefed663bc7e285ad96792b67eadc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dce7293ad7b59fc09a9ab9b0b5b44902c092ca17",
-                "reference": "dce7293ad7b59fc09a9ab9b0b5b44902c092ca17",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e96dd5e7ae9aefed663bc7e285ad96792b67eadc",
+                "reference": "e96dd5e7ae9aefed663bc7e285ad96792b67eadc",
                 "shasum": ""
             },
             "require": {
@@ -4044,7 +4044,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-26T19:06:20+00:00"
+            "time": "2020-10-25T07:23:44+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -4099,16 +4099,16 @@
         },
         {
             "name": "szepeviktor/phpstan-wordpress",
-            "version": "v0.6.3",
+            "version": "v0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szepeviktor/phpstan-wordpress.git",
-                "reference": "d3ff2a9c0f3c336f352061524253c79ccc5ae30f"
+                "reference": "f5040549dc5f46d81ea2432de726c2a0a4ad1141"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szepeviktor/phpstan-wordpress/zipball/d3ff2a9c0f3c336f352061524253c79ccc5ae30f",
-                "reference": "d3ff2a9c0f3c336f352061524253c79ccc5ae30f",
+                "url": "https://api.github.com/repos/szepeviktor/phpstan-wordpress/zipball/f5040549dc5f46d81ea2432de726c2a0a4ad1141",
+                "reference": "f5040549dc5f46d81ea2432de726c2a0a4ad1141",
                 "shasum": ""
             },
             "require": {
@@ -4155,7 +4155,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-08-21T09:36:29+00:00"
+            "time": "2020-10-18T12:11:45+00:00"
         }
     ],
     "aliases": [],
