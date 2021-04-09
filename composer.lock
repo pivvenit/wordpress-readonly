@@ -4048,16 +4048,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.7",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "4dbf1d59cd3f155c6f906f018a8574bc53b5be30"
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4dbf1d59cd3f155c6f906f018a8574bc53b5be30",
-                "reference": "4dbf1d59cd3f155c6f906f018a8574bc53b5be30",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
                 "shasum": ""
             },
             "require": {
@@ -4095,7 +4095,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-10-22T21:09:11+00:00"
+            "time": "2021-04-09T00:54:41+00:00"
         },
         {
             "name": "szepeviktor/phpstan-wordpress",
