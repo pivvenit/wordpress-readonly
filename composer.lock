@@ -3912,16 +3912,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v5.5.1",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "5b62027b3f3b9de4994da627898599460f054584"
+                "reference": "9705d1d0ac8e5000fdcdc96b4d5fd12e429c125d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/5b62027b3f3b9de4994da627898599460f054584",
-                "reference": "5b62027b3f3b9de4994da627898599460f054584",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/9705d1d0ac8e5000fdcdc96b4d5fd12e429c125d",
+                "reference": "9705d1d0ac8e5000fdcdc96b4d5fd12e429c125d",
                 "shasum": ""
             },
             "replace": {
@@ -3948,20 +3948,20 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2020-09-02T05:31:36+00:00"
+            "time": "2021-04-15T14:47:11+00:00"
         },
         {
             "name": "php-stubs/wp-cli-stubs",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wp-cli-stubs.git",
-                "reference": "38fda2907e052ce42fe02e2bfa9f063371ee21c3"
+                "reference": "9140bf3f59d9df1f67f69c0d49d9364ee1684348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wp-cli-stubs/zipball/38fda2907e052ce42fe02e2bfa9f063371ee21c3",
-                "reference": "38fda2907e052ce42fe02e2bfa9f063371ee21c3",
+                "url": "https://api.github.com/repos/php-stubs/wp-cli-stubs/zipball/9140bf3f59d9df1f67f69c0d49d9364ee1684348",
+                "reference": "9140bf3f59d9df1f67f69c0d49d9364ee1684348",
                 "shasum": ""
             },
             "require": {
@@ -3988,7 +3988,7 @@
                 "wordpress",
                 "wp-cli"
             ],
-            "time": "2020-08-04T21:22:17+00:00"
+            "time": "2021-05-19T16:06:45+00:00"
         },
         {
             "name": "phpstan/phpstan",
