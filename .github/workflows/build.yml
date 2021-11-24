@@ -11,6 +11,12 @@ jobs:
       - name: Fetch the entire git repository
         run: |
           git fetch --unshallow
+ 
+      - name: Setup PHP with no coverage driver
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
       - name: Validate composer.json and composer.lock
         run: composer validate --no-check-all --strict
 
