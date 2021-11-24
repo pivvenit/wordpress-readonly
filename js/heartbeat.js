@@ -1,4 +1,4 @@
-jQuery(document).on('heartbeat-tick', function (event, data) {
+jQuery(document).on('heartbeat-tick', async function (event, data) {
         // If there is no readonly info available, do nothing
         if (!data.pivvenit_wordpress_readonly_info) {
             return;
@@ -19,17 +19,15 @@ jQuery(document).on('heartbeat-tick', function (event, data) {
         if (data.pivvenit_wordpress_readonly_info.status == "disabled") {
             if (jQuery(`#${readonlyInfo.id}`).length > 0) {
                 jQuery(`#${readonlyInfo.id}`).remove();
-                location.reload();
             }
             if (window.wp.data !== undefined && window.wp.data.dispatch('core/notices')) {
-                window.wp.data.dispatch('core/notices').removeNotice(readonlyInfo.id)
-                location.reload();
+                await window.wp.data.dispatch('core/notices').removeNotice(readonlyInfo.id)
             }
             return;
         }
 
         if (window.wp.data !== undefined && window.wp.data.dispatch('core/notices')) {
-            window.wp.data.dispatch('core/notices').createNotice(
+            await window.wp.data.dispatch('core/notices').createNotice(
                 'warning',
                 upgradeInProgress,
                 {
