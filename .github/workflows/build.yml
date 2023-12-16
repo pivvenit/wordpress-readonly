@@ -37,5 +37,5 @@ jobs:
 
       - name: Publish repository
         run: |
-          curl -XPOST -u "${{ vars.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_USERNAME}}:${{secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" https://api.github.com/repos/pivvenit/packages.pivvenit.net/dispatches --data '{"event_type": "build_application"}'
+          curl -XPOST -u "${{ vars.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_USERNAME}}:${{secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" https://api.github.com/repos/pivvenit/packages.pivvenit.net/dispatches --data '{"event_type": "workflow_dispatch"}'
 
