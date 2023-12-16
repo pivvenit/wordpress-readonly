@@ -38,7 +38,7 @@ jobs:
       - name: Publish repository
         run: |
           curl -XPOST \
-            -H "Authorization: Bearer ${{secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT}}" \
+            -H "Authorization: Bearer ${{secrets.QUEUE_BUILD}}" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             -H "Content-Type: application/json" \
