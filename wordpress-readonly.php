@@ -24,6 +24,7 @@ const PIVVENIT_WORDPRESS_READONLY_INFO = 'pivvenit_wordpress_readonly_info';
 add_filter(
     'heartbeat_received',
     function ($response) {
+        /** @var string $readonlyInfo */
         $readonlyInfo = get_option(PIVVENIT_WORDPRESS_READONLY_INFO);
         if (!$readonlyInfo) {
             $readonlyInfo = new stdClass();
@@ -48,12 +49,15 @@ add_filter(
             ['wp-i18n']
         );
         wp_set_script_translations('pivvenit_wordpress_readonly_heartbeat', 'pivvenit-wordpress-readonly');
+
+        return true;
     }
 );
 
 add_action(
     'admin_notices',
     function () {
+        /** @var string $readonlyInfo */
         $readonlyInfo = get_option(PIVVENIT_WORDPRESS_READONLY_INFO);
         if (!$readonlyInfo) {
             return;
@@ -75,6 +79,7 @@ add_action(
 add_filter(
     'wp_authenticate_user',
     function ($user) {
+        /** @var string $readonlyInfo */
         $readonlyInfo = get_option(PIVVENIT_WORDPRESS_READONLY_INFO);
         if (!$readonlyInfo) {
             return $user;
@@ -99,6 +104,7 @@ add_filter(
 add_action(
     'plugins_loaded',
     function () {
+        /** @var string $readonlyInfo */
         $readonlyInfo = get_option(PIVVENIT_WORDPRESS_READONLY_INFO);
         if (!$readonlyInfo) {
             return;
@@ -137,6 +143,7 @@ if (defined('WP_CLI') && WP_CLI) {
             $softReadonlyPeriod = new DateTime("now");
             $readonlyInfo->status = 'prepare';
             $readonlyInfo->id = $softReadonlyPeriod->getTimestamp();
+            /** @var string $readonlyInfo */
             update_option(PIVVENIT_WORDPRESS_READONLY_INFO, json_encode($readonlyInfo));
             $displayDate = $softReadonlyPeriod->format('Y-m-d H:i:s');
             WP_CLI::success("[{$displayDate}] System is going in readonly mode in 60 seconds");
@@ -152,6 +159,7 @@ if (defined('WP_CLI') && WP_CLI) {
     WP_CLI::add_command(
         'readonly disable',
         function () {
+            /** @var string $readonlyInfo */
             $readonlyInfo = get_option(PIVVENIT_WORDPRESS_READONLY_INFO);
             if (!$readonlyInfo) {
                 $readonlyInfo = new stdClass();
