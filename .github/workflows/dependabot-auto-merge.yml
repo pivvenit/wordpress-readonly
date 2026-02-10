@@ -6,12 +6,14 @@ on:
   check_suite:
     types: [completed]
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   auto-merge:
     uses: pivvenit/workflow-actions/.github/workflows/dependabot-auto-merge.yml@v1
     with:
       skip-label: 'skip-auto-merge'
       merge-method: 'squash'
-    permissions:
-      pull-requests: write
-      contents: write
+    secrets: inherit
