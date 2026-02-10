@@ -9,10 +9,6 @@ on:
 jobs:
   create-tag:
     uses: pivvenit/workflow-actions/.github/workflows/auto-tag.yml@v1
-    with:
-      default-bump: 'patch'
-      initial-version: '1.0.0'
-      tag-prefix: ''
     permissions:
       contents: write
       pull-requests: read
