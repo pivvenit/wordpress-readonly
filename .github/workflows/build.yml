@@ -35,3 +35,13 @@ jobs:
       - name: Run static analysis
         run: composer run analyse
 
+  trigger-build:
+    needs: master-build
+    uses: pivvenit/workflow-actions/.github/workflows/trigger-repository-build.yml@v1
+    with:
+      target-repository: 'pivvenit/packages.pivvenit.net'
+      event-type: 'build_application'
+    secrets:
+      username: ${{ vars.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_USERNAME }}
+      pat-token: ${{ secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT }}
+
