@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   create-tag:
-    uses: pivvenit/workflow-actions/.github/workflows/auto-tag.yml@v1
+    uses: pivvenit/workflow-actions/.github/workflows/auto-tag.yml@v1.0.0
     secrets: inherit
