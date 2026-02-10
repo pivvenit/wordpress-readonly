@@ -28,5 +28,9 @@
     "lint": "phpcs --standard=PSR12 ./wordpress-readonly.php",
     "analyse": "phpstan analyse --memory-limit=256M",
     "test": "phpunit"
+  },
+  "config": {
+    "platform": {
+    }
   }
 }
