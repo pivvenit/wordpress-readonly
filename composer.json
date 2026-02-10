@@ -26,7 +26,7 @@
   "scripts": {
     "syntax-check": "parallel-lint --no-progress --exclude app --exclude vendor .",
     "lint": "phpcs --standard=PSR12 ./wordpress-readonly.php",
-    "analyse": "phpstan analyse --memory-limit=256M",
+    "analyse": "phpstan analyse --memory-limit=512M",
     "test": "phpunit"
   }
 }
