@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   auto-merge:
-    uses: pivvenit/workflow-actions/.github/workflows/dependabot-auto-merge.yml@v1
+    uses: pivvenit/workflow-actions/.github/workflows/dependabot-auto-merge.yml@v2
     with:
       skip-label: 'skip-auto-merge'
       merge-method: 'squash'
