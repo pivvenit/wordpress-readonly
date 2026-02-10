@@ -37,5 +37,5 @@ jobs:
 
   trigger-build:
     needs: master-build
-    uses: pivvenit/workflow-actions/.github/workflows/trigger-repository-build.yml@v1
+    uses: pivvenit/workflow-actions/.github/workflows/trigger-packages-repository-build.yml@v1
 
