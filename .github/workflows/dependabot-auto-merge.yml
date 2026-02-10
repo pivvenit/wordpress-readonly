@@ -1,0 +1,17 @@
+name: Dependabot Auto-Merge
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  check_suite:
+    types: [completed]
+
+jobs:
+  auto-merge:
+    uses: pivvenit/workflow-actions/.github/workflows/dependabot-auto-merge.yml@v1
+    with:
+      skip-label: 'skip-auto-merge'
+      merge-method: 'squash'
+    permissions:
+      pull-requests: write
+      contents: write
