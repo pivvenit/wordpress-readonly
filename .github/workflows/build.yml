@@ -34,20 +34,3 @@ jobs:
 
       - name: Run static analysis
         run: composer run analyse
-
-  trigger-build:
-    needs: master-build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-        with:
-          repository: pivvenit/workflow-actions
-          ref: v3
-          token: ${{ secrets.WORKFLOW_COMPOSITE_ACTIONS_PAT }}
-          path: .github/workflow-actions
-      - uses: ./.github/workflow-actions/trigger-packages-repository-build
-        env:
-          PACKAGES_PAT: ${{ secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT }}
-          PACKAGES_USERNAME: ${{ vars.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_USERNAME }}
-
