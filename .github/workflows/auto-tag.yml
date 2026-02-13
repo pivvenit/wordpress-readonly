@@ -12,5 +12,7 @@ permissions:
 
 jobs:
   create-tag:
-    uses: pivvenit/workflow-actions/.github/workflows/auto-tag.yml@v1.0.0
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pivvenit/workflow-actions/auto-tag@v3
