@@ -15,4 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pivvenit/workflow-actions/auto-tag@v3
+      - uses: actions/checkout@v4
+        with:
+          repository: pivvenit/workflow-actions
+          ref: v3
+          token: ${{ secrets.WORKFLOW_COMPOSITE_ACTIONS_PAT }}
+          path: .github/workflow-actions
+      - uses: ./.github/workflow-actions/auto-tag

@@ -12,8 +12,16 @@ permissions:
 
 jobs:
   auto-merge:
-    uses: pivvenit/workflow-actions/.github/workflows/dependabot-auto-merge.yml@v1.0.0
-    with:
-      skip-label: 'skip-auto-merge'
-      merge-method: 'squash'
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: pivvenit/workflow-actions
+          ref: v3
+          token: ${{ secrets.WORKFLOW_COMPOSITE_ACTIONS_PAT }}
+          path: .github/workflow-actions
+      - uses: ./.github/workflow-actions/dependabot-auto-merge
+        with:
+          skip-label: 'skip-auto-merge'
+          merge-method: 'squash'
