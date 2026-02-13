@@ -37,6 +37,11 @@ jobs:
 
   trigger-build:
     needs: master-build
-    uses: pivvenit/workflow-actions/.github/workflows/trigger-packages-repository-build.yml@v2
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pivvenit/workflow-actions/trigger-packages-repository-build@v3
+        env:
+          PACKAGES_PAT: ${{ secrets.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_PAT }}
+          PACKAGES_USERNAME: ${{ vars.QUEUE_BUILD_FOR_PACKAGES_PIVVENIT_NET_USERNAME }}
 
