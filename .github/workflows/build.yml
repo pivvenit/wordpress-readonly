@@ -10,7 +10,7 @@ jobs:
   master-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - name: Fetch the entire git repository
         run: |
           git fetch --unshallow
