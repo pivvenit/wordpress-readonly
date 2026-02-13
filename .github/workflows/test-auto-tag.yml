@@ -1,0 +1,13 @@
+name: Test Auto-Tag (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  test-create-tag:
+    uses: pivvenit/workflow-actions/.github/workflows/auto-tag.yml@v1.0.0
+    secrets: inherit
