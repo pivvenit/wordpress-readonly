@@ -36,6 +36,8 @@ updates:
     allow:
       - dependency-type: "direct"
       - dependency-type: "indirect"
+    cooldown:
+      default-days: 1
 
   # Monitor GitHub Actions dependencies
   - package-ecosystem: "github-actions"
@@ -54,3 +56,5 @@ updates:
     commit-message:
       prefix: "ci"
       include: "scope"
+    cooldown:
+      default-days: 1
