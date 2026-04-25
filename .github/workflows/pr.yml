@@ -3,7 +3,7 @@ on: [pull_request]
 name: PR Build
 
 jobs:
-  master-build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
